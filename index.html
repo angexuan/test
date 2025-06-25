@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pennsylvania DHS - Service Location Address</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; }
+    .container { max-width: 900px; margin: 30px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #ccc; padding: 24px; }
+    .header { display: flex; align-items: center; margin-bottom: 24px; }
+    .header img { height: 48px; margin-right: 16px; }
+    .sidebar { float: left; width: 200px; margin-right: 32px; }
+    .sidebar ul { list-style: none; padding: 0; }
+    .sidebar li { margin-bottom: 12px; }
+    .sidebar .active { font-weight: bold; background: #e0e0e0; padding: 6px 12px; border-radius: 4px; }
+    .main { margin-left: 240px; }
+    .section { margin-bottom: 24px; }
+    .section-title { background: #555; color: #fff; padding: 8px 12px; border-radius: 4px 4px 0 0; }
+    form { background: #fafafa; padding: 20px; border-radius: 0 0 4px 4px; }
+    .form-row { display: flex; gap: 16px; margin-bottom: 16px; }
+    .form-group { flex: 1; display: flex; flex-direction: column; }
+    label { margin-bottom: 4px; font-weight: 500; }
+    input, select { padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+    .required { color: #c00; }
+    .actions { text-align: right; }
+    .btn { background: #005fa2; color: #fff; border: none; padding: 10px 24px; border-radius: 4px; cursor: pointer; }
+    .btn:disabled { background: #ccc; }
+    .note { font-size: 0.95em; color: #555; margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://www.dhs.pa.gov/SiteAssets/Pages/PA-Logo.png" alt="Pennsylvania DHS Logo">
+      <div>
+        <h2>Pennsylvania Department of Human Services</h2>
+      </div>
+    </div>
+    <div class="sidebar">
+      <ul>
+        <li class="active">Service Location Address</li>
+        <li>Other Addresses</li>
+        <li>Specialties</li>
+        <li>Provider Eligibility Program (PEP)</li>
+        <li>Provider Identification</li>
+        <li>Additional Information</li>
+        <li>Provider Disclosures</li>
+        <li>Ownership / Control Interest</li>
+        <li>Attachments</li>
+        <li>Agreements</li>
+        <li>Summary</li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="section">
+        <div class="note">
+          <strong>ATN:</strong> 1101359453 &nbsp; | &nbsp;
+          <strong>Provider Number:</strong> Pending &nbsp; | &nbsp;
+          <strong>Type:</strong> New Enrollment &nbsp; | &nbsp;
+          <strong>Start Date:</strong> 06/17/2025 &nbsp; | &nbsp;
+          <strong>Completion By:</strong> 07/17/2025
+        </div>
+        <button class="btn" style="background:#003366; margin-bottom: 16px;">Autofill with CAQH</button>
+        <div class="section-title">Service Location Address</div>
+        <div class="note">
+          Complete the fields on this page and select the Save and Continue button to continue with this application<br>
+          <span class="required">*</span> Indicates a required field.<br>
+          <span style="font-style:italic;">&#128206; Indicates an attachment is required.</span>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title">Service Location Physical Address</div>
+        <form>
+          <div class="note">
+            This address must be a physical address where a practitioner maintains an office, holds office hours/sets appointments and renders services. A post office box is not a valid Service Location Physical Address.<br>
+            Verify your selection of the service location physical address state prior to saving this page. Once this information is saved, it cannot be changed. If this information is incorrect, you will need to begin a <a href="#">brand new</a> application.
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="street">Street <span class="required">*</span></label>
+              <input type="text" id="street" name="street" required>
+            </div>
+            <div class="form-group">
+              <label for="room">Room/Suite</label>
+              <input type="text" id="room" name="room">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="city">City <span class="required">*</span></label>
+              <input type="text" id="city" name="city" required>
+            </div>
+            <div class="form-group">
+              <label for="state">State <span class="required">*</span></label>
+              <select id="state" name="state" required>
+                <option value="PA">PA - Pennsylvania</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="zip">Zip+4 <span class="required">*</span></label>
+              <input type="text" id="zip" name="zip" required>
+            </div>
+            <div class="form-group">
+              <label for="county">County <span class="required">*</span></label>
+              <select id="county" name="county" required>
+                <option value="">Select a County</option>
+                <!-- Add county options here -->
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="myemail@domain.com">
+            </div>
+            <div class="form-group">
+              <label for="confirm_email">Confirm Email <span class="required">*</span></label>
+              <input type="email" id="confirm_email" name="confirm_email" required placeholder="myemail@domain.com">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" required placeholder="###-###-####">
+            </div>
+            <div class="form-group">
+              <label for="phone_ext">Phone Extension</label>
+              <input type="text" id="phone_ext" name="phone_ext">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fax">Fax Number</label>
+              <input type="tel" id="fax" name="fax" placeholder="###-###-####">
+            </div>
+          </div>
+          <div class="actions">
+            <button type="submit" class="btn">Save and Continue</button>
+          </div>
+        </form>
+        <div class="note" style="margin-top: 16px;">
+          After this information is saved, you will have the option to enter different address information for Mail-To, Pay-To, and Home Office Addresses.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
